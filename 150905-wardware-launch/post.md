@@ -1,6 +1,6 @@
 # Recently Launched: Wardware 2.0
 
-Over the last year I have had the pleasure to work with Airslie Ltd, a UK-based medical informatics company, and [Kings Cross Hospital (NHS Foundation Trust)](https://www.kch.nhs.uk/) to rewrite and extended their clinical observations and assessments system, Wardware. Wardware enables the entry, analysis and display of **Early Warning Scores** and other patient datasets for clinical use locally or remotely on **mobile and desktop computers**. The application was originally built using PHP, sans framework, and the company who originally authored the application, Airslie, were motivated to rewrite it using an application framework. Their chosen framework was **Ruby on Rails** and they approached me to lead the development effort.
+Over the last year I have had the pleasure to work with [Airslie Ltd](http://www.airslie.com), a UK-based medical informatics company, and [King's College Hospital (NHS Foundation Trust)](https://www.kch.nhs.uk/) to rewrite and extended their clinical observations and assessments system, Wardware®. Wardware enables the entry, analysis and display of **Early Warning Scores** and other patient datasets for clinical use locally or remotely on **mobile and desktop computers**. The application was originally built using PHP, sans framework, and the company who originally authored the application, Airslie, was motivated to rewrite it using an application framework. Their chosen framework was **Ruby on Rails** and they approached me to lead the development effort.
 
 ![Mobile Desktop](http://firsthand-blog.s3.amazonaws.com/2015/07/wardware-comparison.png)
 
@@ -14,7 +14,7 @@ Physiological parameters are recorded using a mobile device, the [MioCare Tablet
 
 ## An extendible platform for supporting different assessments
 
-The **Observations and Assessments module** is designed to be extended. It is a platform for implementing other assessments by simply configuring the physiological parameters and the assessment's calculator. Beyond NEWS, the Wardware installation at Kings Cross Hospital is currently configured for:
+The **Observations and Assessments module** is designed to be extended. It is a platform for implementing other assessments by simply configuring the physiological parameters and the assessment's calculator. Beyond NEWS, the Wardware installation at King's College Hospital is currently configured for:
 
 - [Glasgow Comma Scale](http://en.wikipedia.org/wiki/Glasgow_Coma_Scale)
 - Gastro-intestinal/Stools
@@ -44,7 +44,7 @@ Observation and Assessment Charts are presented in three formats:
 
 ![graphical](http://firsthand-blog.s3.amazonaws.com/2015/07/wardware-historical.png)
 
-## A range of module supporting a patient's tracking and analysis requirements
+## A range of modules supporting a patient's tracking and analysis requirements
 
 Wardware doesn't just support observations and assessments, it supports various tracking and analysis requirements to monitor a patient. Briefly these include:
 
@@ -69,9 +69,4 @@ There is a lot more detail I can go into, but this post is long enough. Here are
 
 ## Domain Modeling Challenges
 
-In future blog posts I will discuss some of the interesting domain modeling challenges of this project and how I leveraged, Martin Fowler's [Analysis Patterns](http://martinfowler.com/books/ap.html) for observations and measurements based on the use of operational and knowledge levels based on the work he did for the [Cosmos Clinical Process Model for the UK National Health Service](http://rewrite.rickbradley.com/articles/2006/07/06/cosmos-documentation/).
-
-## QUESTIONS
-
-- deployed to how many wards?
-- recorded how many obs. in the first month?
+In future blog posts I will discuss some of the interesting domain modelling challenges of this project and how I leveraged Martin Fowler's [Analysis Patterns](http://martinfowler.com/books/ap.html). His patterns for observations and measurements is based on his work with the [Cosmos Clinical Process Model for the UK National Health Service](http://rewrite.rickbradley.com/articles/2006/07/06/cosmos-documentation/).
